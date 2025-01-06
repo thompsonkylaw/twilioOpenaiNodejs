@@ -272,8 +272,8 @@ fastify.register(async (fastify) => {
     });
 });
 
-//fastify.listen({ port: PORT }, (err) => {
-fastify.listen(8080, "0.0.0.0", (err) => {
+fastify.listen({ port: PORT, host: "0.0.0.0" }, (err) => {
+//fastify.listen(8080, "0.0.0.0", (err) => {
     if (err) {
         console.error(err);
         process.exit(1);
