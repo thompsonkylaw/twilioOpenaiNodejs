@@ -10,14 +10,6 @@ dotenv.config();
 // Retrieve the OpenAI API key from environment variables.
 const { OPENAI_API_KEY } = process.env;
 
-if (!PORT) {
-    console.error('Missing PORT. Please set it in the .env file.');
-    process.exit(1);
-}
-else {
-    console.log(`portx = ${PORT}`);
-}
-
 if (!OPENAI_API_KEY) {
     console.error('Missing OpenAI API key. Please set it in the .env file.');
     process.exit(1);
